@@ -1,9 +1,7 @@
 @ECHO OFF
-
-echo Running Selenium test
-
+echo Building the test project
 mvn clean dependency:copy-dependencies install
-dir
+echo Finished Building
+echo Running the selenium test
 java -jar .\target\LoginTest-1.0-SNAPSHOT.jar
-
-echo Done.
+echo UI test completed.
