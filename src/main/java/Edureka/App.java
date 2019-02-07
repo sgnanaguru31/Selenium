@@ -39,7 +39,7 @@ public class App
         Assert.assertEquals (message, "Login Failed!");
 
         Thread.sleep(5000);
-
+System.out.println("Test finished");
         // Conclude a test
         driver.quit();
 
